@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 abstract class AppRoutes {
   //     BottomNavigator
   static String? initialRoute = 'NavigationBar.id';
@@ -6,5 +8,5 @@ abstract class AppRoutes {
     
     // BottomNavigator.id: (context) => const BottomNavigator(),
     
-    },
+    };
     }
