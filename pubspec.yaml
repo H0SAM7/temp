@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.16
   google_fonts: ^6.2.1
   intl: ^0.20.1
 
@@ -49,8 +50,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -60,6 +61,7 @@ flutter:
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
+  
   # example:
   # fonts:
   #   - family: Schyler
@@ -77,3 +79,10 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 flutter_intl:
   enabled: true
+
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/core/utils/
+  filename: assets.dart
+  field_prefix: null
+  ignore_comments: true
