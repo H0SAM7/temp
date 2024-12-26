@@ -2,8 +2,8 @@
 class Assets {
   Assets._();
   
+  static const String imagesBackground = "assets/images/background.png";
+
   static const String imagesBuildLocation = "assets/images/build_location.svg";
-
-  static const String imagesViewLuxuriousVillaWithModernArchitecturalDesign = "assets/images/view-luxurious-villa-with-modern-architectural-design.svg";
-
 }
+

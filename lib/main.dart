@@ -1,4 +1,5 @@
 import 'package:broker/core/routes/app_routes.dart';
+import 'package:broker/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,18 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.routes,
+     
     );
   }
 }
 
-class NavigationBar extends StatelessWidget {
-  const NavigationBar({super.key});
-  static String id = 'NavigationBar';
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
+
