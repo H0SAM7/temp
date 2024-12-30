@@ -52,6 +52,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/icons/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -80,7 +81,7 @@ flutter_intl:
   enabled: true
 
 flutter_assets:
-  assets_path: assets/images/
+  assets_path: assets/
   output_path: lib/core/utils/
   filename: assets.dart
   field_prefix: null

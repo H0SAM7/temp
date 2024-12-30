@@ -12,9 +12,11 @@ class OnboardingView extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Image.asset(
-            Assets.imagesBackground,
-            fit: BoxFit.fill,
+          Positioned.fill(
+            child: Image.asset(
+              Assets.imagesBackground,
+              fit: BoxFit.cover,
+            ),
           ),
           Center(
             child: Padding(
@@ -30,7 +32,7 @@ class OnboardingView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-
+            
                     
                     // Padding(
                     //   padding: const EdgeInsets.all(8.0),
