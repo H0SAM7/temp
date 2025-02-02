@@ -3,14 +3,32 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 abstract class AppStyles {
+  
 
-
-static TextStyle styleMedium18(BuildContext context) {
+  static TextStyle style22Black(BuildContext context) {
     return TextStyle(
-      //   color: blueColor,
-      fontSize: getResponsiveSize(context, fontSize: 18),
-      fontFamily: GoogleFonts.amiri().fontFamily,
-      fontWeight: FontWeight.bold,
+      color: Colors.black,
+      fontSize: getResponsiveSize(context, fontSize: 22),
+      fontWeight: FontWeight.w600,
+    );
+  }
+
+
+  static TextStyle style32(BuildContext context,Color color) {
+    return TextStyle(
+      color: color,
+      fontSize: getResponsiveSize(context, fontSize: 32),
+      fontWeight: FontWeight.w700,
+    );
+  }
+
+
+
+  static TextStyle style14(BuildContext context,) {
+    return const TextStyle(
+        fontSize: 14,
+            fontWeight: FontWeight.w400,
+            color: Color(0xff495057)
     );
   }
 
@@ -21,35 +39,12 @@ static TextStyle styleMedium18(BuildContext context) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  static TextStyle style14(BuildContext context) {
-  
+  static TextStyle styleMedium18(BuildContext context) {
     return TextStyle(
-       color: whiteColor,
-
-      fontSize: getResponsiveSize(context, fontSize: 14),
-
-      fontFamily: GoogleFonts.inter().fontFamily,
-      fontWeight: FontWeight.w400,
+      //   color: blueColor,
+      fontSize: getResponsiveSize(context, fontSize: 18),
+      fontFamily: GoogleFonts.amiri().fontFamily,
+      fontWeight: FontWeight.bold,
     );
   }
 

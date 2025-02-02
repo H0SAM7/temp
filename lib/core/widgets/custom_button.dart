@@ -18,21 +18,24 @@ final void Function()? onTap;
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          width: 250,
-          height: 45, 
+          width:300,
+          height: 45,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: color ?? blue500,
+            color: color ?? moveColor,
           ),
           child: Padding(
             padding: const EdgeInsets.only(left: 8.0),
             child: Center(
-          
               child: 
               Text(
                 title,
                 textAlign: TextAlign.left,
-                style: AppStyles.style14(context),
+                style: AppStyles.style14(context).copyWith(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white
+                ),
               ),
             ),
           ),
@@ -41,3 +44,5 @@ final void Function()? onTap;
     );
   }
 }
+
+
