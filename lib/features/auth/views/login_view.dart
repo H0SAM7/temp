@@ -4,6 +4,7 @@ import 'package:broker/core/utils/assets.dart';
 import 'package:broker/core/utils/colors.dart';
 import 'package:broker/core/widgets/custom_button.dart';
 import 'package:broker/core/widgets/custom_text_field.dart';
+import 'package:broker/features/auth/views/forget_view.dart';
 import 'package:broker/features/auth/views/register_view.dart';
 import 'package:broker/features/auth/widgets/sign_up_text.dart';
 import 'package:flutter/gestures.dart';
@@ -57,17 +58,22 @@ class LoginView extends StatelessWidget {
             hint: 'Enter your Password',
             isPasswordField: true,
           ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text(
-                'Forget Password?',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    color: moveColor,
-                    fontSize: 14),
+          GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, ForgetView.id);
+            },
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Text(
+                  'Forget Password?',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: moveColor,
+                      fontSize: 14),
+                ),
               ),
             ),
           ),

@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 
 abstract class AppRoutes {
   //     BottomNavigator
-  static String? initialRoute = ResetPassSuccView.id;
+  static String? initialRoute = RegisterView.id;
   static Map<String, Widget Function(BuildContext)> routes = {
 
     //navigation bar #########

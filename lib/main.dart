@@ -6,7 +6,10 @@ import 'package:google_fonts/google_fonts.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
-void main() => runApp(
+
+void main() => 
+
+runApp(
       DevicePreview(
         enabled: true,
         builder: (context) => MyApp(), 
