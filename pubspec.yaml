@@ -87,7 +87,10 @@ flutter_intl:
 
 flutter_assets:
   assets_path: assets/
+<<<<<<< HEAD
   # assets_path: assets/icons/
+=======
+>>>>>>> 14426c82e84b85fc1a0f8b223b9a2b8f03b379b1
   output_path: lib/core/utils/
   filename: assets.dart
   field_prefix: null

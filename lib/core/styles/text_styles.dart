@@ -48,6 +48,24 @@ abstract class AppStyles {
     );
   }
 
+
+  static TextStyle style24(BuildContext context) {
+  
+    return  TextStyle(
+                    fontSize: 24,
+                    color: blue500,
+                    fontFamily:  GoogleFonts.inter().fontFamily,
+                    fontWeight: FontWeight.bold,
+                  );
+  }
+
+
+
+
+
+
+
+
   static TextStyle style18(BuildContext context) {
     return TextStyle(
       //   color: blueColor,
@@ -59,13 +77,6 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle style24(BuildContext context) {
-    return TextStyle(
-      //   color: blueColor,
-      fontSize: getResponsiveSize(context, fontSize: 24),
-      fontWeight: FontWeight.w600,
-    );
-  }
 
   static const TextStyle style25 = TextStyle(
     color: Colors.black,

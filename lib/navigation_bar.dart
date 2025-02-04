@@ -1,6 +1,6 @@
 import 'package:broker/core/utils/colors.dart';
 import 'package:broker/features/Favorites/favo_view.dart';
-import 'package:broker/features/home/home_view.dart';
+import 'package:broker/features/home/views/home_view.dart';
 import 'package:broker/features/settings/settings_view.dart';
 import 'package:flutter/material.dart';
 
